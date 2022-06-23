@@ -1,0 +1,71 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFFFF;
+    font:bold 16px 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+/* NAV STYLING */
+
+nav{
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-size: 28px;
+}
+
+nav div{
+    padding: 21px 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black ;
+    letter-spacing: 5px;
+    
+}
+
+/* SECTION STYLING */
+
+section {
+    height: calc(100vh - 75px); /*This makes it responsive*/
+    /* Syntax being 100% of viewport - hieght of navbar */
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.container div{
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    margin-bottom: 40px;
+    font:bold 36px 'Open Sans', sans-serif;
+}
+
+.container button{
+    padding: 5px;
+    color:white;
+    background-color: black;
+    font:bold 24px 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    border: black solid 2px;
+    border-radius: 8px;
+    transition: background 0.5s, color 0.5s;
+}
+
+.container button:hover{
+    background: rgba(0, 0, 0, 0);
+    color: black;
+}
